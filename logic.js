@@ -14,7 +14,7 @@ var checkDead = setInterval(function() {
     let blockLeft = parseInt(window.getComputedStyle(block).getPropertyValue("left"));
     if(blockLeft<20 && blockLeft>-20 && characterTop>=130){
         block.style.animation = "none";
-        alert("Game Over. score: "+Math.floor(counter/100));
+        alert("Game Over... YOUR SCORE IS: "+Math.floor(counter/100));
         counter=0;
         block.style.animation = "block 1.3s infinite linear";
     }else{
