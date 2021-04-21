@@ -8,39 +8,46 @@
 .game{
     width: 500px;
     height: 200px;
-    border: 1px solid black;
     margin: auto;
+    background-position: fixed;
 }
 #character{
     width: 20px;
     height: 60px;
-    background-color: red;
+    background-color: grey;
     position:relative;
     top: 150px;
+    border-radius: 14%;
 }
 .animate{
     animation: jump 0.3s linear;
 }
 #block{
-    background-color: blue;
+    background-color: white;
     width: 20px;
     height: 20px;
     position: relative;
     top: 130px;
     left: 500px;
     animation: block 1.3s infinite linear;
-    border-radius: 10px;
+    border-radius: 30%;
 }
 @keyframes block{
     0%{left: 500px}
     100%{left: -20px}
 }
+
+/*jump animation*/
 @keyframes jump{
-    0%{top: 150px;}
+    0%{top: 160px;}
     30%{top: 100px;}
     70%{top: 100px;}
-    100%{top: 150px;}
+    100%{top: 160px;}
 }
 p{
     text-align: center;
+}
+.i:hover{
+    color: yellow;
+    font-size: 20px;
 }
