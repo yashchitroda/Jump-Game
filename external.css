@@ -6,12 +6,15 @@
     color: white;
 }
 .game{
-    width: 500px;
-    height: 200px;
+    width: 600px;
+    height: 400px;
     margin: auto;
     background-position: fixed;
+    
 }
 #character{
+    border-color: cyan;
+    border-style: dotted;
     width: 20px;
     height: 60px;
     background-color: grey;
@@ -25,7 +28,7 @@
 #block{
     background-color: white;
     width: 20px;
-    height: 20px;
+    height: 8px;
     position: relative;
     top: 130px;
     left: 500px;
@@ -50,4 +53,5 @@ p{
 .i:hover{
     color: yellow;
     font-size: 20px;
+    text-decoration: underline;
 }
